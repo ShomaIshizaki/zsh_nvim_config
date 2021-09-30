@@ -1,6 +1,6 @@
-# zsh_nvim_config
+# 個人用メモ
 
-## nvim0.5インストール
+## nvim0.5インストールとその他
 
 ```
 sudo apt install neovim
