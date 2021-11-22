@@ -2,9 +2,15 @@
 
 ## nvim0.5インストールとその他
 
-```
-sudo apt install neovim
-sudo apt install python3-pip
+```bash
+# リポジトリの追加
+sudo apt -y install software-properties-common
+
+sudo apt update
+sudo apt upgrade
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt -y install neovim
+sudo apt -y install python3-pip
 pip3 install neovim
 pip3 install pynvim
 ```
