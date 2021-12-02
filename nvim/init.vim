@@ -1,7 +1,6 @@
 " let g:python2_host_prog='/usr/bin/python3'
 " let g:python3_host_prog='/Users/ishizakishoma/miniforge3/bin/python3'
-"let g:python3_host_prog='/usr/bin/python3'
-let g:python3_host_prog='/home/ishizaki/.pyenv/shims/python3'
+let g:python3_host_prog='/usr/bin/python3'
 
 runtime! /after/*.vim
 set number
