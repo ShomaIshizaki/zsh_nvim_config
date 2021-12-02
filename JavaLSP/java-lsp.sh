@@ -8,7 +8,7 @@
 # to point to the `config_mac' or `config_win` folders depending on your system.
 
 JAR="$HOME/dev/eclipse/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_*.jar"
-GRADLE_HOME=$HOME/gradle /usr/lib/jvm/java-11-openjdk/bin/java \
+GRADLE_HOME=$HOME/gradle /usr/lib/jvm/java-1.11.0-openjdk-arm64/bin/java \
   -Declipse.application=org.eclipse.jdt.ls.core.id1 \
   -Dosgi.bundles.defaultStartLevel=4 \
   -Declipse.product=org.eclipse.jdt.ls.core.product \
