@@ -24,6 +24,7 @@ set t_Co=256
 set laststatus=2
 set shortmess+=c
 set splitright
+set signcolumn=yes
 filetype plugin indent on
 " nnoremap <C-P> :PlugInstall<CR>
 nnoremap <C-F> :FZF <CR>
