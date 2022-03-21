@@ -5,8 +5,10 @@ let g:ale_fixers = {
       \ 'python': ['autopep8', 'isort'],
 	  \}
 let g:ale_fix_on_save = 1
+let g:ale_change_sign_column_color=1
 " 表示に関する設定
 let g:ale_sign_error = ''
+" let g:ale_sign_warning = ''
 let g:ale_sign_warning = ''
 let g:airline#extensions#ale#open_lnum_symbol = '('
 let g:airline#extensions#ale#close_lnum_symbol = ')'

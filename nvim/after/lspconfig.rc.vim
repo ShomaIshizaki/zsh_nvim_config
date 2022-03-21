@@ -1,7 +1,6 @@
 runtime! plug.vim
 lua << EOF
 -- python-language-server setting
---require'lspconfig'.pyright.setup{}
 require'lspconfig'.vimls.setup{}
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
@@ -19,6 +18,16 @@ lspconfig.gopls.setup {
     },
   },
 }
+-- html language server settings
+require'lspconfig'.html.setup {
+capabilities = capabilities,
+}
+-- c language server settings
+require'lspconfig'.clangd.setup{
+capabilities = capabilities,
+}
+-- css language server settings
+require'lspconfig'.cssls.setup{}
 EOF
 
 lua << EOF
@@ -123,15 +132,5 @@ protocol.CompletionItemKind = {
 '', -- TypeParameter
 }
 
--- html language server settings
-require'lspconfig'.html.setup {
-capabilities = capabilities,
-}
--- c language server settings
-require'lspconfig'.clangd.setup{
-capabilities = capabilities,
-}
--- css language server settings
-require'lspconfig'.cssls.setup{}
 EOF
 
